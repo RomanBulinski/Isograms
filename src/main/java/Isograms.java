@@ -11,4 +11,9 @@ public class Isograms {
         }
         return map.size() == str.length();
     }
+
+    public static boolean isIsogramFromCodeWars(String str) {
+        return str.toLowerCase().chars().distinct().count() == str.length();
+    }
+
 }
